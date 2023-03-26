@@ -1,39 +1,46 @@
-#include <opencv2/opencv.hpp>
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 
-using namespace cv;
-using namespace std;
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
 
-int main(int argc, char** argv) {
-    Mat imgA, imgB, imgC;
-    imgA = imread(argv[1], IMREAD_GRAYSCALE);
-    imgB = imread(argv[2], IMREAD_GRAYSCALE);
+int main(int argc, char **argv) {
 
-    if (imgA.empty() || imgB.empty()) {
-        cout << "Could not read the images" << endl;
-        return -1;
-    }
+    IplImage* imgA = cvLoadImage(argv[1], CV_LOAD_IMAGE_GRAYSCALE);
+    IplImage* imgB = cvLoadImage(argv[2], CV_LOAD_IMAGE_GRAYSCALE);
 
-    imgC = Mat::zeros(imgA.size(), CV_8UC1);
+    IplImage* imgC = cvCreateImage(cvSize(imgA->width, imgA->height), imgA->depth, 1);
 
-    for (int i = 0; i < imgA.rows; i++) {
-        for (int j = 0; j < imgA.cols; j++) {
-            if (abs(imgA.at<uchar>(i, j) - imgB.at<uchar>(i, j)) < 100) {
-                imgC.at<uchar>(i, j) = 255;
+    int row, col;
+    for (row = 0; row < imgA->height; row++) {
+        for (col = 0; col < imgA->width; col++) {
+            int valA = cvGet2D(imgA, row, col).val[0];
+            int valB = cvGet2D(imgB, row, col).val[0];
+            int diff = abs(valA - valB);
+            if (diff < 100) {
+                cvSet2D(imgC, row, col, cvScalar(255));
+            } else {
+                cvSet2D(imgC, row, col, cvScalar(0));
             }
         }
     }
 
-    namedWindow("Image A", WINDOW_AUTOSIZE);
-    imshow("Image A", imgA);
+    cvNamedWindow("Imagen A", CV_WINDOW_AUTOSIZE);
+    cvShowImage("Imagen A", imgA);
 
-    namedWindow("Image B", WINDOW_AUTOSIZE);
-    imshow("Image B", imgB);
+    cvNamedWindow("Imagen B", CV_WINDOW_AUTOSIZE);
+    cvShowImage("Imagen B", imgB);
 
-    namedWindow("Image C", WINDOW_AUTOSIZE);
-    imshow("Image C", imgC);
+    cvNamedWindow("Imagen C", CV_WINDOW_AUTOSIZE);
+    cvShowImage("Imagen C", imgC);
 
-    waitKey(0);
+    cvWaitKey(0);
 
-    return 0;
+    cvReleaseImage(&imgA);
+    cvReleaseImage(&imgB);
+    cvReleaseImage(&imgC);
+
+    cvDestroyAllWindows();
+
+    return EXIT_SUCCESS;
 }
