@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
             for (columna = 0; columna < Img->width; columna++) {
 
                 if (*pImgFinal < *pImg) {
-                    *pImgFinal = *pImgFinal + 1;
+                    (*pImgFinal)++;
                 }
                 pImgFinal++;
                 pImg++;
