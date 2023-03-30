@@ -1,7 +1,7 @@
 # Enunciado examen
 
 ## PRIMERA PRUEBA GRUPO REDUCIDO
-## AP 2023 - lun, 12:30-14:30
+### AP 2023 - lun, 12:30-14:30
 
 1.- (7 Puntos) A partir de la imagen 4C3.png, crea con instrucciones SSE2 enteras la nueva imagen con los bordes verticales verdes. 
 La imagen es de 4 canales. El borde será de 100 píxeles.
