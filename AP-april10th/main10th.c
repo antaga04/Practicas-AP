@@ -4,8 +4,6 @@
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 
-#include <Windows.h>
-
 void copiarBloque(int filaOrigen, int colOrigen, IplImage* ImgOrigen, int filaDestino,
 int colDestino, IplImage *ImgDestino, int alto, int ancho){
     
