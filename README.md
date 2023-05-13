@@ -9,13 +9,13 @@ Solo copia el código del main de la carpeta deseada en el main de tu proyecto, 
 
 → Sigue los siguientes pasos si tienes descargadas las carpetas opencv3.0.0 y cygwin64. Comprueba con las imágenes. 
 
-1. Añadimos la carpeta **/include** de opencv3 en <span style="color:red">'Include Directories'</span>.
+1. Añadimos la carpeta **/include** de opencv3 en _'Include Directories'_.
 ![C Compiler](https://res.cloudinary.com/drsfru9lj/image/upload/v1683994302/Captura_de_pantalla_2023-05-13_181019_hcp3ue.png)
 
-2. Añadimos la carpeta **/x64** en <span style="color:red";>'Additional Libraries Directories'</span>. Y también el archivo **world300.dll** en <span style="color:red">'Libraries'</span>.
+2. Añadimos la carpeta **/x64** en _'Additional Libraries Directories'_ Y también el archivo **world300.dll** en _'Libraries'_.
 ![Linker](https://res.cloudinary.com/drsfru9lj/image/upload/v1683994302/Captura_de_pantalla_2023-05-13_181039_dafn2e.png)
 
-3. Añadimos el nombre de las imágenes separadas por espacio y con su extensión en <span style="color:red">'Run Command'</span>.
+3. Añadimos el nombre de las imágenes separadas por espacio y con su extensión en _'Run Command'_.
 ![Run](https://res.cloudinary.com/drsfru9lj/image/upload/v1683994302/Captura_de_pantalla_2023-05-13_181100_clxaxd.png)
 
 ## Configuración de Variable de entorno PATH
