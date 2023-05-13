@@ -8,3 +8,4 @@ Solo copia el código del main de la carpeta deseada en el main de tu proyecto, 
 ### Configuración del proyecto en NeatBeans
 ![C Compiler](https://res.cloudinary.com/drsfru9lj/image/upload/v1683993830/prop1_tapcyd.png)
 
+<img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1683993830/prop1_tapcyd.png" alt="Texto alternativo" style="width: 50%; height: auto;">
