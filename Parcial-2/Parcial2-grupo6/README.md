@@ -1,18 +1,9 @@
-1.- (7.5 Puntos) Escribe la función moverBloque con SSE2, que copie un bloque de una 
-imagen A en otro bloque de la imagen B, y además borre el bloque A (queda en color 
-negro).
+1.- (7.5 Puntos) Realiza el efecto mosaico con una sola imagen donde se calculará la 
+media de los componentes de color por cada bloque de pixeles. El resultado será una 
+imagen exactamente igual que la original pero pixelada. 
+Escribid el código en el fichero ejercicio 1.c, mostrad el resultado al profesor 
+cuando el programa funcione y entregad el proyecto al final del examen.
+ 2.- (2.5 Puntos) Repite el ejercicio anterior usando threads.
 
-**void moverBloque(Iplimage *imgA, int filaA, int colA, iplimage *imgB, int filaB, int 
-colB)**
-
-Haz el efecto de transición en el cual se van moviendo todos los bloques de la imagen 
-A a la imagen B. Se deben visualizar las 2 imágenes. Hacer una pausa de 100 ms después 
-de visualizar cada movimiento.
-
-Escribid el código en el fichero ejercicio1.c, mostrad el resultado al profesor cuando 
-el programa funcione y entregad el proyecto al final del examen.
-
-2.- (4 Puntos). Modifica el ejercicio anterior para realizarlo con 2 threads. El 
-primero realiza la mitad izquierda, y el segundo la mitad derecha
 Escribid el código en el fichero ejercicio2.c, mostrad el resultado al profesor cuando 
 el programa funcione y entregad el proyecto al final del examen.
