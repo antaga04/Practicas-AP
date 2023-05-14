@@ -5,6 +5,8 @@ bloques en la imagen a calcular el mosaico es el que indica la figura. Los bloqu
 aves y frutas. El borde blanco es solo indicativo para mostrar la separación de los 
 bloques.
 
+<img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1684058587/Pasted_Graphic_qkzxco.png" alt="Exam" style="width: 500px">
+
 Escribid el código en el fichero ejercicio 1.c, mostrad el resultado al profesor 
 cuando el programa funcione y entregad el proyecto al final del examen.
 
