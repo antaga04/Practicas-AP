@@ -1,4 +1,4 @@
-1. (7.5 Puntos) Escribe la función moverBloque con SSE2, que copie un bloque de una 
+1.- (7.5 Puntos) Escribe la función moverBloque con SSE2, que copie un bloque de una 
 imagen A en otro bloque de la imagen B, y además borre el bloque A (queda en color 
 negro).
 
@@ -12,7 +12,7 @@ de visualizar cada movimiento.
 Escribid el código en el fichero ejercicio1.c, mostrad el resultado al profesor cuando 
 el programa funcione y entregad el proyecto al final del examen.
 
-2. (4 Puntos). Modifica el ejercicio anterior para realizarlo con 2 threads. El 
+2.- (4 Puntos). Modifica el ejercicio anterior para realizarlo con 2 threads. El 
 primero realiza la mitad izquierda, y el segundo la mitad derecha
 Escribid el código en el fichero ejercicio2.c, mostrad el resultado al profesor cuando 
 el programa funcione y entregad el proyecto al final del examen.
