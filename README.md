@@ -22,7 +22,7 @@ Solo copia el código del main de la carpeta deseada en el main de tu proyecto, 
 
 Sigue los pasos en rojo de las imágenes.
 
-![Propiedades del sistema](https://res.cloudinary.com/drsfru9lj/image/upload/v1683994302/Captura_de_pantalla_2023-05-13_181100_clxaxd.png)
+![Propiedades del sistema](https://res.cloudinary.com/drsfru9lj/image/upload/v1683995235/Captura_de_pantalla_2023-05-13_a_las_18.26.21_xalgbx.png)
 ![Editar variables de entorno](https://res.cloudinary.com/drsfru9lj/image/upload/v1683995235/Captura_de_pantalla_2023-05-13_a_las_18.26.33_doxjn2.png)
 
 ## Aclaraciones 
