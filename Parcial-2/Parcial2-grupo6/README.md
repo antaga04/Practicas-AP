@@ -2,8 +2,8 @@
 imagen A en otro bloque de la imagen B, y además borre el bloque A (queda en color 
 negro).
 
-void moverBloque(Iplimage *imgA, int filaA, int colA, iplimage *imgB, int filaB, int 
-colB)
+**void moverBloque(Iplimage *imgA, int filaA, int colA, iplimage *imgB, int filaB, int 
+colB)**
 
 Haz el efecto de transición en el cual se van moviendo todos los bloques de la imagen 
 A a la imagen B. Se deben visualizar las 2 imágenes. Hacer una pausa de 100 ms después 
