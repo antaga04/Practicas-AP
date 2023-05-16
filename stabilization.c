@@ -4,6 +4,32 @@
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 
+void cvSet(IplImage* img, CvScalar value) {
+    int i, j;
+    for (i = 0; i < img->height; i++) {
+        uchar* ptr = (uchar*)(img->imageData + i * img->widthStep);
+        for (j = 0; j < img->width; j++) {
+            ptr[j * img->nChannels + 0] = (uchar)value.val[0];
+            ptr[j * img->nChannels + 1] = (uchar)value.val[1];
+            ptr[j * img->nChannels + 2] = (uchar)value.val[2];
+        }
+    }
+}
+
+void cvCopy(IplImage* src, IplImage* dst) {
+    int i, j;
+    for (i = 0; i < src->height; i++) {
+        uchar* srcPtr = (uchar*)(src->imageData + i * src->widthStep);
+        uchar* dstPtr = (uchar*)(dst->imageData + i * dst->widthStep);
+        for (j = 0; j < src->width; j++) {
+            dstPtr[j * dst->nChannels + 0] = srcPtr[j * src->nChannels + 0];
+            dstPtr[j * dst->nChannels + 1] = srcPtr[j * src->nChannels + 1];
+            dstPtr[j * dst->nChannels + 2] = srcPtr[j * src->nChannels + 2];
+        }
+    }
+}
+
+
 int main(int argc, char** argv) {
 
 
